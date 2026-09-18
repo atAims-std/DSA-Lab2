@@ -2,8 +2,13 @@
 #include <cassert>
 using namespace std;
 bool isSorted(const int* arr, const int size) {
+   if (arr == nullptr || size <= 1) {
+        return true;
+    }
     for (int i = 0; i < size - 1; i++) {
-        if (*(arr + i) > *(arr + i + 1)) return false;
+        if (*(arr + i) > *(arr + i + 1)) {
+            return false;
+        }
     }
     return true;
 }
