@@ -58,5 +58,12 @@ void testEmptyOrInvalidSize() {
 
 int main() {
     testSortedArray();
+    testUnsortedArray();
+    testDuplicateValues();
+    testSingleElement();
+    testDescendingArray();
+    testNegativeValues();
+    testAllEqualElements();
+    testEmptyOrInvalidSize();
     return 0;
 }
